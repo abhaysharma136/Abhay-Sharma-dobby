@@ -1,0 +1,16 @@
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.Error404-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard-elements{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

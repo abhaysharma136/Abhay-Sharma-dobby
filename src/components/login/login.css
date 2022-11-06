@@ -1,0 +1,27 @@
+.register-form-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.register-button{
+    width: 300px;
+    height: 50px;
+}
+
+.register-textfields{
+    flex-direction: column;
+    gap: 15px;
+}
+.registerCheckbox{
+    justify-content: center;
+    align-items: center;
+}
+.register-links{
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+.register-links a{
+    text-decoration: none;
+}
