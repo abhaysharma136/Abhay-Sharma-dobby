@@ -113,10 +113,9 @@ export default function Login() {
         </Snackbar>
       ) : null}
       <div className="leftSide-container flex">
-        <h1>Welcome to Rsquare.</h1>
+        <h1>Already Have a Account?</h1>
         <p>
-          Lets get you all set up so start with your account and begin setting
-          up your profile.
+          Lets fill your details and start your journey wuith us.
         </p>
       </div>
       <div className="rightSide-container">

@@ -119,7 +119,7 @@ export default function Register() {
             </Snackbar>
           ) : null}
       <div className="leftSide-container flex">
-        <h1>Welcome to Rsquare.</h1>
+        <h1>Welcome to Imagery.</h1>
         <p>
           Lets get you all set up so start with your account and begin setting
           up your profile.
