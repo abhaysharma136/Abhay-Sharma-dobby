@@ -7,6 +7,7 @@ import * as yup from "yup";
 import { Link, useNavigate } from "react-router-dom";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
+import { API } from "../../shared/global";
 
 const PasswordValidationSchema = yup.object({
   email: yup
@@ -48,7 +49,7 @@ export default function Register() {
   var [result, setResult] = useState({});
 
   function CreateUser(newUser) {
-    const res = fetch("http://localhost:4000/users2/signup", {
+    const res = fetch(`${API}/users2/signup`, {
       method: "POST",
       body: JSON.stringify(newUser),
       headers: {

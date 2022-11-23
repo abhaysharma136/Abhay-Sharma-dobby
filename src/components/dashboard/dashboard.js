@@ -6,6 +6,7 @@ import storage from "../../firebaseConfig";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { useNavigate } from "react-router-dom";
 import DeleteIcon from '@mui/icons-material/Delete';
+import { API } from "../../shared/global";
 
 
 export default function Dashboard() {
@@ -97,7 +98,7 @@ export default function Dashboard() {
 
   function UpdateImageArrar(imgArr) {
     imgArr.map((img) => {
-      fetch(`http://localhost:4000/users2/${id}`, {
+      fetch(`${API}/users2/${id}`, {
         method: "PUT",
         body: JSON.stringify({imgID:imgArr.length, src: img }),
         headers: {
@@ -109,7 +110,7 @@ export default function Dashboard() {
   }
 
   function getUserImages() {
-    const res = fetch(`http://localhost:4000/users2/${id}`, {
+    const res = fetch(`${API}/users2/${id}`, {
       method: "GET",
       body: JSON.stringify(),
       headers: {
@@ -220,7 +221,7 @@ function DisplayImg({ img, imgid }) {
     const data={
       "imgID":imgId
     }
-    fetch(`http://localhost:4000/users2/remove/${id}`, {
+    fetch(`${API}/users2/remove/${id}`, {
         method: "PUT",
         body: JSON.stringify(data),
         headers: {

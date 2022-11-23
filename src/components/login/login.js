@@ -7,6 +7,7 @@ import * as yup from "yup";
 import { Link, useNavigate } from "react-router-dom";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
+import { API } from "../../shared/global";
 
 const Alert = forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -39,7 +40,7 @@ export default function Login() {
 
   
   function VerifyUser(newUser) {
-    const res = fetch(`http://localhost:4000/users2/login`, {
+    const res = fetch(`${API}/users2/login`, {
       method: "POST",
       body: JSON.stringify(newUser),
       headers: {
