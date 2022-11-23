@@ -33,7 +33,7 @@ export default function Login() {
       localStorage.setItem("id", result.id);
       localStorage.setItem("message", result.message);
 
-      navigate(`/dashboard/${id}`);
+      navigate(`/dashboard/${result.id}`);
     }
   };
 
@@ -159,7 +159,7 @@ export default function Login() {
                   <input type="checkbox" />
                   <p>rememeber me</p>
                 </div>
-                <Link to="">forgot password</Link>
+                <Link to="/">Register now</Link>
               </div>
 
               <Button

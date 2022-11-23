@@ -1,0 +1,15 @@
+.image-view-full{
+    width: 90vw;
+    height: 90vh;
+    margin:10px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.img-display{
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}

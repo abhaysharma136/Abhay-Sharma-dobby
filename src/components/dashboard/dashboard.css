@@ -15,6 +15,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .preview-contaner div{
@@ -32,15 +33,24 @@
 }
 
 .preview-element-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400;
+    border: 2px solid #000;
+    box-Shadow: 24;
     position: absolute;
     width: 608px;
     height: 384px;
     flex-direction: column;
     justify-content: center;
     border-radius: 4px;
-    border: 1px solid aliceblue;
+    background-color: aliceblue;
+    /* border: 1px solid aliceblue; */
 }
-
+.back{
+    backdrop-filter: blur(10px);
+}
 .preview-contaner div {
     width: 560px;
     height: 229px;
@@ -60,4 +70,47 @@
     align-items: center;
     margin: 15px 50px;
     gap: 15px;
+}
+.img-dashboard{
+    width: 250px;
+    height: 180px;
+    object-fit: contain;
+}
+.img-container{
+    flex-wrap: wrap;
+    gap: 15px;
+    /* background-color: pink; */
+    justify-content: center;
+    align-items: center;
+}
+.img-box{
+    width: 300px;
+    height: 220px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.2s ease;
+}
+.button-container-dashboard{
+    flex-direction: column;
+    gap: 5px;
+}
+.img-box div{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    opacity: 0;
+}
+.img-box:hover div{
+    opacity: 1;
+}
+
+.img-box:hover{
+    transform: scale(1.02);
+}
+.img-box div{
+    transition: all 0.5s ease;
 }
