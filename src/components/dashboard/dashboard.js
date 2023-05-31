@@ -146,7 +146,7 @@ export default function Dashboard() {
       <div className="nav-bar flex">
         <div>
           <h3>Media Library</h3>
-          <p>{imgArr.length} images</p>
+          <p>{imgArr?.length} images</p>
         </div>
         <div className="flex button-container-dashboard">
           <Button variant="outlined" onClick={()=>Logout()}>LogOut</Button>
@@ -169,12 +169,12 @@ export default function Dashboard() {
       </div>
       <div className="dashboard-elements flex">
         <div className="flex img-container">
-          {imgArr.length === 0 ? (
+          {imgArr?.length === 0 ? (
             <DisplayNoImage/>
           ) : (
             ""
           )}
-          {imgArr.map((img,index) => (
+          {imgArr?.map((img,index) => (
             <DisplayImg img={img} key={index} imgid={index} />
           ))}
         </div>
